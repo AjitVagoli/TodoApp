@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -19,63 +19,92 @@
   font-family: 'Segoe UI', sans-serif;
 }
 
-
-.dis{
+.dis {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
   margin-top: 20px;
   background-color: darkturquoise;
-  height: 60px;
-  min-width: 400px;
+  height: 70px;
+  width: 90%;
+  max-width: 500px;
   border-radius: 10px;
+  padding: 0 1rem;
+  text-align: center;
+  flex-wrap: wrap;
 }
 
-.dis2{
+.dis2 {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: sienna;
-  height: 50px;
-  min-width: 300px;
+  height: 90px;
+  width: 100%;
+  max-width: 400px;
   margin-top: 30px;
-  gap: 20px;
+  gap: 15px;
   border-radius: 10px;
-
+  padding: 0 1rem;
+  flex-wrap: wrap;
 }
 
-.add{
+.but{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.add,
+.u,
+.x {
   color: white;
-  background-color: green;
   height: 30px;
-  min-width: 60px;
+  width: 70px;
   border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
 }
 
-.u{
+.add { background-color: green; }
+.u   { background-color: goldenrod; }
+.x   { background-color: red; }
+
+.li {
   color: white;
-  background-color: goldenrod;
-  height: 30px;
-  min-width: 60px;
-  border-radius: 5px;
+  text-align: center;
+  font-size: 1rem;
 }
 
-.x{
-  color: white;
-  background-color: red;
-  height: 30px;
-  min-width: 60px;
-  border-radius: 5px;
-}
-
-.li{
-  color: white;
-}
-
-input{
+input {
   height: 40px;
-  width: 300px;
+  width: 90%;
+  max-width: 300px;
   border-radius: 10px;
-  font-size: 15px;
+  font-size: 1rem;
+  padding: 0 0.75rem;
+  border: none;
+}
+
+/* Responsive tweaks for smaller screens */
+@media (max-width: 480px) {
+  .dis,
+  .dis2 {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .add,
+  .u,
+  .x {
+    width: 80px;
+    font-size: 0.9rem;
+  }
+
+  input {
+    width: 100%;
+  }
 }

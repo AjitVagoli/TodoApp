@@ -16,13 +16,17 @@ const App = () => {
   return (
     <div className='wrp'>
       <div className='dis'>
+      <div>
       <input
         type='text'
         placeholder='add'
         value={post}
         onChange={changehandler}
       />
+      </div>
+      <div>
       <button onClick={clickhandler} className='add'>{eindex!==null? 'Update':'Add'}</button>
+      </div>
       </div>
 
       <div>
@@ -31,8 +35,10 @@ const App = () => {
 
           <div className='dis2'>
           <li className='li' key={index}>{li}</li>
+          <div className='but'>
           <button onClick={()=>dhandler(index)} className='x'>X</button>
           <button onClick={()=>uhandler(index)} className='u'>Update</button>
+          </div>
           </div>
 
           ))}
