@@ -6,10 +6,10 @@
 
 .wrp {
   min-height: 100vh;
-  background-color: salmon;
+  background-color: #FEF3E2;
   background-image: 
     radial-gradient(black 1.2px, transparent 1.2px), 
-    radial-gradient(white 1.2px, transparent 1.2px);
+    radial-gradient(#102E50 1.2px, transparent 1.2px);
   background-position: 0 0, 10px 10px;
   background-size: 50px 50px;
   display: flex;
@@ -19,13 +19,27 @@
   font-family: 'Segoe UI', sans-serif;
 }
 
+h1{
+  background-color: #BE3D2A ;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  height: 60px;
+  width: 15%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .dis {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
   margin-top: 20px;
-  background-color: darkturquoise;
+  background-color: #E78B48;
   height: 70px;
   width: 90%;
   max-width: 500px;
@@ -39,7 +53,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: sienna;
+  background-color: #AB4459;
   height: 90px;
   width: 100%;
   max-width: 400px;
@@ -91,10 +105,12 @@ input {
 /* Responsive tweaks for smaller screens */
 @media (max-width: 480px) {
   .dis,
-  .dis2 {
+  .dis2,
+  h1 {
     flex-direction: column;
     height: auto;
     padding: 1rem;
+    width: auto;
   }
 
   .add,
